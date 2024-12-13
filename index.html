@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Carros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <span>LR</span>car
+      </div>
+      <button id="abrirModal" class="register-button">Cadastre-se</button>
+    </header>
+    <main class="main-content">
+      <h1>CATÁLOGO DE CARROS</h1>
+      <table id="lista">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Modelo</th>
+            <th>Ano de Lançamento</th>
+            <th>Cor</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Os dados dos carros serão adicionados aqui -->
+        </tbody>
+      </table>
+    </main>
+
+    <dialog id="cadastrar" style="background-color: #222; margin: auto auto; color: white;">
+      <div class="container">
+        <header class="header">
+          <h1 class="logo">LR<span>car</span></h1>
+        </header>
+        <main class="main-content">
+          <h2>Nova Locação de Carros</h2>
+          <form id="carForm" class="car-form">
+            <div class="form-group">
+              <input type="text" id="modelo" placeholder="Modelo" required>
+              <input type="text" id="lancamento" placeholder="Lançamento" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="cor" placeholder="Cor" required>
+              <input type="text" id="status" placeholder="Status" required>
+            </div>
+            <button type="submit" class="submit-button">Confirmar</button>
+          </form>
+        </main>
+      </div>
+    </dialog>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
